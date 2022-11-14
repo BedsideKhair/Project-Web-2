@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Repair Booking</title>
+	<!--Embed bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body onload='loadRepairBooking()'>
+	<!--Header-->
+	<header class="row" style="min-height: 15vh; background-color: var(--header-color);">
+		<!--Title-->
+		<div class="col-12 col-md-12 col-lg-9 m-0 p-0 d-flex align-items-center" style="min-height: 17vh;">
+			<h1 class="text-white ms-4 me-6">REPAIR BOOKING</h1>
+		</div>
+		
+	</header>
+	
+	<!--main-->
+<form id="repair-booking" class="container-fluid">
+	<main class="row">
+		<div class="col-12 col-md-12 col-lg-12 container" style="min-height: 20vh">
+		<h1 class="ms-2">Customer</h1>
+		 <div class="row ms-1">
+			<p>Full name: <span id="title"></span> <span id="firstname"></span> <span id="lastname"></span></p>
+			<p>Street: <span id="street"></span></p>
+			<p>Suburb: <span id="suburb"></span></p>
+			<p>City: <span id="city"></span></p>
+		 </div>
+		</div>
+<hr>
+		<div class="ms-2 col-12 col-md-12 col-lg-12 m-0 pl-3 container" style="min-height: 20vh">
+			<h1>Repair Details</h1>
+				<p>Purchase Date: <span id="purchasedate"></span></p>
+				<p>Repair Date Time: <span id="repairdate"></span></p>
+				<p>Under Warranty: <span id="underwarranty"></span></p>
+				<p>IMEI Number: <span id="imeinumber"></span></p>
+				<p>Device Make: <span id="devicemake"></span></p>
+				<p>Model Number: <span id="modelnumber"></span></p>
+				<p>Fault Category: <span id="faultcategory"></span></p>
+				<p>Description: <span id="description"></span></p>
+		</div>
+
+		<div class="col-12 col-md-12 col-lg-3 m-0 pl-3 container" style="min-height: 20vh">
+			<div class="row mt-2 ms-3 me-3">
+				<table class="table table-bordered border-dark">
+					<tr>
+						<td class="text-center">Item</td>
+						<td class="text-center">Cost</td>
+					</tr>	
+					<tr>
+						<td><span id="item"></span></td>
+						<td><span id="cost"></span></td>
+					</tr>						
+				</table>						
+			</div>		
+		</div>
+		
+		<div class="ms-2 col-12 col-md-12 col-lg-12 m-0 pl-3 container" style="min-height: 20vh">
+			<h4>Totals</h4>
+				<p>Bond: <span id="bond"></span></p>
+				<p>Service Fee: <span id="servicefee"></span></p>
+				<p>Total: <span id="total"></span></p>
+				<p>GST: <span id="gst"></span></p>
+				<p>Total(+GST): <span id="totalgst"></span></p>
+		</div>
+	</main>
+	<hr>
+</form>
+	<!--Footer-->
+	<footer class="d-flex" style="min-height: 10vh;">
+		<div class="col-12 col-md-12 col-lg-10 m-0 pl-3 container">
+		<h5>Phone Fix Services</h5>
+		<p>Gloucester Street</p>
+		<p>Taradale</p>
+		</div>
+		
+		<div class="col-12 col-md-12 col-lg-2 m-0 pl-3 container">
+		<h5>Contact us:</h5>
+		<p>06876543</p>
+		</div>
+	</footer>
+	
+	
+ 
+	<!--insert Bootstrap JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<!--insert JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<!--insert our own js file-->
+	<script src="javascript.js"></script>
+</body>
+</html>
